@@ -65,6 +65,7 @@ interface CountryPickerProps {
   disableNativeModal?: boolean
   visible?: boolean
   placeholder?: string
+  customPlaceHolderStyle?: StyleProp<TextStyle>
   containerButtonStyle?: StyleProp<ViewStyle>
   closeButtonImage?: ImageSourcePropType
   closeButtonStyle?: StyleProp<ViewStyle>
