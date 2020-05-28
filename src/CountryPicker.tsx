@@ -64,6 +64,7 @@ interface CountryPickerProps {
   disableNativeModal?: boolean
   visible?: boolean
   placeholder?: string
+  customPlaceHolderColor? : string
   containerButtonStyle?: StyleProp<ViewStyle>
   closeButtonImage?: ImageSourcePropType
   closeButtonStyle?: StyleProp<ViewStyle>
@@ -108,6 +109,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
     closeButtonImageStyle,
     excludeCountries,
     placeholder,
+    customPlaceHolderColor,
   } = props
   const [state, setState] = useState<State>({
     visible: props.visible || false,
@@ -156,6 +158,7 @@ export const CountryPicker = (props: CountryPickerProps) => {
     onOpen,
     containerButtonStyle,
     placeholder,
+    customPlaceHolderColor
   }
 
   useEffect(() => {
